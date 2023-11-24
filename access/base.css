@@ -1,0 +1,16 @@
+:root{
+    --blue: #2F89FC;
+    --drak__blue: #0E64D2;
+    --backgruond: rgba(217, 217, 217, 0.02);;
+    --light__blue: #1877F2;
+
+}
+html, body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.wrapper{
+    max-width: 360px;
+    width: 100%;
+    margin-inline: auto;
+}
