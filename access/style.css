@@ -33,14 +33,40 @@ margin-bottom: 28px;
     line-height: normal;
     
   }
-.login-password__button{
+  .login-password {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.login-password__button {
     width: 312px;
     height: 48px;
     flex-shrink: 0;
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.40);
     background: rgba(255, 255, 255, 0.08);
+    padding-right: 40px; /* Thêm padding để để chứa icon */
 }
+
+.login-password__icon {
+    position: absolute;
+    top: 10%;
+    right: 10px;
+}
+
+.login-password__icon img {
+    width: 20px;
+    height: auto;
+}
+
+/* Ẩn password khi nhập */
+.login-password__button[type="password"] {
+    font-family: "Courier New", Courier, monospace; /* Đảm bảo các dấu chấm có kích cỡ giống nhau */
+    -webkit-text-security: disc; /* Ẩn text và hiển thị dấu chấm */
+    input-security: disc;
+}
+
 .login-password__button::placeholder{
     padding-left: 10px;
     color: rgba(0, 0, 0, 0.70);
