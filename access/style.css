@@ -49,6 +49,7 @@ margin-bottom: 28px;
     padding-right: 40px; /* Thêm padding để để chứa icon */
 }
 
+
 .login-password__icon {
     position: absolute;
     top: 10%;
@@ -100,20 +101,56 @@ margin-bottom: 20px;
 height: 24px;
 flex-shrink: 0;
 }
-.login-click__button button{
-    width: 312px;
-height: 48px;
-flex-shrink: 0;
-border-radius: 5px;
-background: var(--drak__blue);
-border: none;
-color: rgba(255, 255, 255, 0.90);
+.login-click__button button {
+    padding-left: 30px;
+    color: rgba(255, 255, 255, 0.90);
 font-family: Poppins;
 font-size: 14px;
 font-style: normal;
 font-weight: 600;
 line-height: normal;
-}
+text-align: center;
+    width: 312px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: var(--drak__blue);
+    border: none;
+    padding-right: 40px; /* Thêm padding để để chứa icon */
+    border-radius: 8px;
+    transition: all 1s ease;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-transform: capitalize;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  .login-click__button button::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    );
+    transition: all linear 0.5s;
+  }
+  .llogin-click__button button:hover {
+    background-color: #1dc071;
+    color: #fff;
+  }
+  .login-click__button button:hover::before {
+    left: 100%;
+  }
+
+
+
 .login-text{
     display: flex;
 
@@ -162,6 +199,47 @@ line-height: normal;
     left: 5%;
 }
 
+.login-click__facebook button {
+    padding-left: 50px;
+    width: 312px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #1877F2;
+    padding-right: 40px; /* Thêm padding để để chứa icon */
+    border-radius: 8px;
+    transition: all 1s ease;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-transform: capitalize;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  .login-click__facebook button::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    );
+    transition: all linear 0.5s;
+  }
+  .login-click__facebook button:hover {
+    background-color: #1dc071;
+    color: #fff;
+  }
+  .login-click__facebook button:hover::before {
+    left: 100%;
+  }
+
+
 .login-text__or{
     display: flex;
     margin-bottom: 23px;
@@ -194,6 +272,50 @@ line-height: normal;
     left: 5%;
 
 }
+.login-click__google button {
+    padding-left: 50px;
+    margin-top: 20px;
+ width: 312px;
+height: 48px;
+flex-shrink: 0;
+border-radius: 10px;
+border: 1px solid rgba(0, 0, 0, 0.40);
+background: rgba(255, 255, 255, 0.02);
+color: rgba(0, 0, 0, 0.60);
+    padding-right: 40px; /* Thêm padding để để chứa icon */
+    border-radius: 8px;
+    transition: all 1s ease;
+    display: inline-block;
+    overflow: hidden;
+    position: relative;
+    text-transform: capitalize;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+      0 2px 4px -2px rgba(0, 0, 0, 0.1);
+  }
+  .login-click__google button::before {
+    content: "";
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.9),
+      transparent
+    );
+    transition: all linear 0.5s;
+  }
+  .login-click__google button:hover {
+    background-color: #1dc071;
+    color: #fff;
+  }
+  .login-click__google button:hover::before {
+    left: 100%;
+  }
+
+
 .login-click__help{
     margin-top: 74px;
    margin-bottom: 8px;
