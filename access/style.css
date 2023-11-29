@@ -197,7 +197,7 @@ line-height: normal;
 margin: 16px 5px 5px 5px;
 }
 .login-click__facebook button{
-    width: 312px;
+width: 312px;
 height: 48px;
 flex-shrink: 0;
 border-radius: 10px;

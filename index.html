@@ -9,10 +9,11 @@
     <link rel="stylesheet" href="./access/base.css">
     <link rel="stylesheet" href="./access/reset.css">
     <link rel="stylesheet" href="./access/style.css">
-    <link rel="stylesheet" href="./taget-password.js">
+    <script src="./main.js"> </script>
     <title>Login Form </title>
 </head>
 <body>
+    
     <div class="wrapper wrapper-login">
         <div class="container-login">
             <p class="login-title">Login
@@ -27,18 +28,7 @@
                       </a>
                     </div>
                   </div>
-                 <script>
-                    const togglePasswordLink = document.getElementById('togglePassword');
-                    const passwordField = document.getElementById('passwordField');
-                    togglePasswordLink.addEventListener('click', function(event) {
-                    event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
-                    if (passwordField.type === 'password') {
-                        passwordField.type = 'text';
-                    } else {
-                        passwordField.type = 'password';
-                    }
-                    });
-                 </script>
+              
 
             <p class="Forgot-Password">Enter Your Password</p>
             <div class="login-click__button">
