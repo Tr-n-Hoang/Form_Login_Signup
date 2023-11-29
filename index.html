@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./access/base.css">
     <link rel="stylesheet" href="./access/reset.css">
     <link rel="stylesheet" href="./access/style.css">
+    <link rel="stylesheet" href="./taget-password.js">
     <title>Login Form </title>
 </head>
 <body>
@@ -19,14 +20,26 @@
                 <input class="login-email" type="text" placeholder="Enter Your Username / Email">
                
                 <div class="login-password">
-                    <input class="login-password__button" type="password" placeholder="Enter Your Password">
+                    <input id="passwordField" class="login-password__button" type="password" placeholder="Enter Your Password">
                     <div class="login-password__icon">
-                        <a href="##">
-                            <img src="./image/eye_password.svg" alt="">
-                        </a>
+                      <a href="#" id="togglePassword">
+                        <img class="eye-icon" src="./image/eye_password.svg" alt="Toggle Password">
+                      </a>
                     </div>
-                </div>
-        
+                  </div>
+                 <script>
+                    const togglePasswordLink = document.getElementById('togglePassword');
+                    const passwordField = document.getElementById('passwordField');
+                    togglePasswordLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Ngăn chặn hành động mặc định của liên kết
+                    if (passwordField.type === 'password') {
+                        passwordField.type = 'text';
+                    } else {
+                        passwordField.type = 'password';
+                    }
+                    });
+                 </script>
+
             <p class="Forgot-Password">Enter Your Password</p>
             <div class="login-click__button">
                 <button type="button">Login</button>
@@ -43,11 +56,12 @@
                 </div>
                 <div class="login-click__facebook">
                     <button type="button">Login with Facebook</button>
-                    <img src="./image/facebook logo.svg" alt="">
+                    <img src="./image/icon fb.svg" alt="">
                 </div>
+
                 <div class="login-click__google">
                     <button type="button">Login with Google</button>
-                    <img src="./image/google logo.svg" alt="">
+                    <img src="./image/google.png" alt="">
                 </div>
                 <div class="login-click__help">
                     <img src="./image/Me logo.svg" alt="">

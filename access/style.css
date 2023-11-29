@@ -21,6 +21,7 @@ border-radius: 10px;
 border: 1px solid rgba(0, 0, 0, 0.40);
 background: rgba(255, 255, 255, 0.08);
 margin-bottom: 28px;
+padding-left: 10px;
 }
 .login-email::placeholder {
 
@@ -47,6 +48,7 @@ margin-bottom: 28px;
     border: 1px solid rgba(0, 0, 0, 0.40);
     background: rgba(255, 255, 255, 0.08);
     padding-right: 40px; /* Thêm padding để để chứa icon */
+    padding-left: 10px;
 }
 
 
@@ -66,6 +68,7 @@ margin-bottom: 28px;
     font-family: "Courier New", Courier, monospace; /* Đảm bảo các dấu chấm có kích cỡ giống nhau */
     -webkit-text-security: disc; /* Ẩn text và hiển thị dấu chấm */
     input-security: disc;
+    padding-left: 10px;
 }
 
 .login-password__button::placeholder{
@@ -77,6 +80,22 @@ margin-bottom: 28px;
     font-weight: 400;
     line-height: normal;
 }
+
+
+/* Định dạng cho ảnh toggle */
+.eye-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
 .Forgot-Password{
     color: #2F89FC;
 font-family: Poppins;
@@ -151,6 +170,7 @@ text-align: center;
 
 
 
+
 .login-text{
     display: flex;
 
@@ -191,6 +211,7 @@ font-weight: 600;
 line-height: normal;
 }
 .login-click__facebook{
+  margin-bottom: 20px;
     position: relative;
 }
 .login-click__facebook img{
@@ -237,6 +258,47 @@ line-height: normal;
   }
   .login-click__facebook button:hover::before {
     left: 100%;
+  }
+  .login-click__facebook img {
+    width: 32px;
+    height: 32px;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    color: #0c5adb;
+    background: transparent;
+    -webkit-animation: ripple-white 1s linear infinite;
+    animation: ripple-blue 1s linear infinite;
+    -webkit-transition: 0.5s;
+    font-size: 14px;
+    z-index: 44;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-click__facebook img {
+    height: 30px;
+    fill: rgba(255, 255, 255, 0.9);
+  }
+  @keyframes ripple-blue {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(29, 192, 113, 0.3),
+        0 0 0 10px rgba(29, 192, 113, 0.3), 0 0 0 20px rgba(29, 192, 113, 0.3);
+      box-shadow: 0 0 0 0 rgba(29, 192, 113, 0.3),
+        0 0 0 10px rgba(29, 192, 113, 0.3), 0 0 0 20px rgba(29, 192, 113, 0.3);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 0 10px rgba(29, 192, 113, 0.3),
+        0 0 0 20px rgba(29, 192, 113, 0.3), 0 0 0 30px rgba(29, 192, 113, 0);
+      box-shadow: 0 0 0 10px rgba(29, 192, 113, 0.3),
+        0 0 0 20px rgba(29, 192, 113, 0.3), 0 0 0 30px rgba(29, 192, 113, 0);
+    }
+  }
+
+  .login-click__facebook img{
+    position: absolute;
   }
 
 
@@ -315,7 +377,45 @@ color: rgba(0, 0, 0, 0.60);
     left: 100%;
   }
 
+  .login-click__google img {
+    width: 32px;
+    height: 32px;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 50%;
+    position: relative;
+    -webkit-animation: ripple-white 1s linear infinite;
+    animation: ripple-blue 1s linear infinite;
+    -webkit-transition: 0.5s;
+    font-size: 14px;
+    z-index: 44;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .login-click__google img {
+    height: 30px;
+  }
+  @keyframes ripple-blue {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba(29, 192, 113, 0.3),
+        0 0 0 10px rgba(29, 192, 113, 0.3), 0 0 0 20px rgba(29, 192, 113, 0.3);
+      box-shadow: 0 0 0 0 rgba(29, 192, 113, 0.3),
+        0 0 0 10px rgba(29, 192, 113, 0.3), 0 0 0 20px rgba(29, 192, 113, 0.3);
+    }
+    100% {
+      -webkit-box-shadow: 0 0 0 10px rgba(29, 192, 113, 0.3),
+        0 0 0 20px rgba(29, 192, 113, 0.3), 0 0 0 30px rgba(29, 192, 113, 0);
+      box-shadow: 0 0 0 10px rgba(29, 192, 113, 0.3),
+        0 0 0 20px rgba(29, 192, 113, 0.3), 0 0 0 30px rgba(29, 192, 113, 0);
+    }
+  }
 
+  .login-click__google img{
+    position: absolute;
+    top: 40%
+  }
 .login-click__help{
     margin-top: 74px;
    margin-bottom: 8px;
